@@ -8,7 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+<!--Android12 (API31)之后 如果组件定义了intent filter 就必须指明 android:exported属性 此属性用于指示该组件是否可以由其他应用程序启动-->
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
