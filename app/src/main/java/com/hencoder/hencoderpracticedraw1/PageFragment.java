@@ -26,6 +26,7 @@ public class PageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_page, container, false);
+          // 在fragment中示例和练习各占一半的篇幅
 
         ViewStub sampleStub = (ViewStub) view.findViewById(R.id.sampleStub);
         sampleStub.setLayoutResource(sampleLayoutRes);

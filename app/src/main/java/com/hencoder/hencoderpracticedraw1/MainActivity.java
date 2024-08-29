@@ -66,7 +66,10 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    private class PageModel {
+    /**
+     * 页面模型数据类
+     */
+    private static class PageModel {
         @LayoutRes int sampleLayoutRes;
         @StringRes int titleRes;
         @LayoutRes int practiceLayoutRes;
